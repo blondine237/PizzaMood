@@ -1,0 +1,34 @@
+PizzaMood — Site statique HTML/CSS/JS
+======================================
+
+Comment ouvrir le site
+----------------------
+1. Dézippez l'archive.
+2. Double-cliquez sur index.html pour l'ouvrir dans votre navigateur.
+   Ou faites un clic droit → "Ouvrir avec" → choisissez Chrome, Firefox, Edge, etc.
+
+Pages incluses
+----------------
+- index.html        : Page d'accueil
+- menu.html         : Carte et prix
+- a-propos.html     : Histoire de la pizzeria
+- galerie.html      : Photos (filtres inclus)
+- contact.html      : Formulaire de contact + carte
+- avis.html         : Avis clients + formulaire de soumission
+- moderation.html   : Espace modération (mot de passe : pizzamood-admin)
+- notifications.html: Historique des alertes e-mail
+
+Fonctionnement
+--------------
+- Les avis et l'historique e-mail sont stockés dans le navigateur (localStorage).
+- Quand un client soumet un avis, il passe en attente dans moderation.html.
+- Une fois connecté à l'espace modération, vous pouvez approuver, dépublier ou supprimer un avis.
+- Chaque soumission d'avis crée automatiquement une entrée dans notifications.html.
+
+Personnalisation
+------------------
+- Modifiez les textes directement dans les fichiers .html.
+- Changez les couleurs et polices dans style.css.
+- Ajoutez vos vraies images dans le dossier assets/.
+
+Note : ce site est 100 % statique. Aucun serveur Node.js ou React n'est nécessaire.

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu & prix — PizzaMood Douala</title>
+  <meta name="description" content="Notre carte : pizzas classiques et signatures, boissons fraîches et desserts maison, avec les prix en FCFA.">
+  <meta property="og:title" content="Menu & prix — PizzaMood Douala">
+  <meta property="og:description" content="Notre carte : pizzas classiques et signatures, boissons fraîches et desserts maison, avec les prix en FCFA.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<div class="index" style="--page-bg:url(assets/bg-dark.jpg)" data-page="menu">
+<header>
+  <a href="index.html" class="logo">
+    <img class="logo-img" src="assets/logo-pizzamood.png" alt="Logo PizzaMood" width="1536" height="1024">
+  </a>
+  <nav id="main-nav">
+    <a href="index.html" data-page="index">Accueil</a>
+    <a href="a-propos.html" data-page="a-propos">À propos</a>
+    <a href="menu.html" data-page="menu">Menu</a>
+    <a href="galerie.html" data-page="galerie">Galerie</a>
+    <a href="avis.html" data-page="avis">Avis</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+  </nav>
+  <a href="menu.html" class="commande">Commander</a>
+</header>
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+<div class="background-blur blur3"></div>
+<section class="page">
+  <div class="page-head">
+    <span class="kicker">La carte</span>
+    <h1>Notre <span>menu</span></h1>
+    <p>Toutes nos pizzas sont préparées à la commande sur une pâte fermentée 24 heures et cuites au four à pierre.</p>
+  </div>
+
+  <div class="menu-filters" id="menu-filters"><button type="button" data-filter="Tout">Tout</button><button type="button" data-filter="Classiques">Classiques</button><button type="button" data-filter="Signatures">Signatures</button><button type="button" data-filter="Végé">Végé</button></div>
+
+  <div class="specialites-grid" id="menu-grid"><article class="pizza-card" data-cat="Classiques">
+      <span class="badge">Best-seller</span>
+      <img src="assets/pizza-margherita.jpg" alt="Pizza Margherita" loading="lazy" width="960" height="640">
+      <div class="pizza-info">
+        <h3>Margherita</h3>
+        <p>Sauce tomate maison, mozzarella fior di latte, basilic frais.</p>
+        <div class="tags"><span>Tomate</span><span>Mozzarella</span><span>Basilic</span></div>
+        <div class="price">
+          <span>3 500 FCFA</span>
+          <a href="contact.html" aria-label="Commander Margherita"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </article><article class="pizza-card" data-cat="Classiques">
+      
+      <img src="assets/pizza-pepperoni.jpg" alt="Pizza Pepperoni Feu" loading="lazy" width="960" height="640">
+      <div class="pizza-info">
+        <h3>Pepperoni Feu</h3>
+        <p>Pepperoni épicé, mozzarella, piment doux et huile d'olive.</p>
+        <div class="tags"><span>Pepperoni</span><span>Piment</span></div>
+        <div class="price">
+          <span>4 500 FCFA</span>
+          <a href="contact.html" aria-label="Commander Pepperoni Feu"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </article><article class="pizza-card" data-cat="Signatures">
+      
+      <img src="assets/pizza-fromages.jpg" alt="Pizza Quatre Fromages" loading="lazy" width="960" height="640">
+      <div class="pizza-info">
+        <h3>Quatre Fromages</h3>
+        <p>Mozzarella, gouda, parmesan et chèvre fondus au four à pierre.</p>
+        <div class="tags"><span>Fromages</span><span>Fondant</span></div>
+        <div class="price">
+          <span>5 000 FCFA</span>
+          <a href="contact.html" aria-label="Commander Quatre Fromages"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </article><article class="pizza-card" data-cat="Végé">
+      
+      <img src="assets/pizza-vegetarienne.jpg" alt="Pizza Végétarienne" loading="lazy" width="960" height="640">
+      <div class="pizza-info">
+        <h3>Végétarienne</h3>
+        <p>Poivrons, champignons, olives noires, roquette et tomates cerises.</p>
+        <div class="tags"><span>Légumes</span><span>Sans viande</span></div>
+        <div class="price">
+          <span>4 000 FCFA</span>
+          <a href="contact.html" aria-label="Commander Végétarienne"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </article><article class="pizza-card" data-cat="Signatures">
+      <span class="badge">Nouveau</span>
+      <img src="assets/pizza-poulet.jpg" alt="Pizza Poulet BBQ" loading="lazy" width="960" height="640">
+      <div class="pizza-info">
+        <h3>Poulet BBQ</h3>
+        <p>Poulet mariné, sauce barbecue, oignons rouges et coriandre.</p>
+        <div class="tags"><span>Poulet</span><span>BBQ</span></div>
+        <div class="price">
+          <span>5 500 FCFA</span>
+          <a href="contact.html" aria-label="Commander Poulet BBQ"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </article><article class="pizza-card" data-cat="Signatures">
+      
+      <img src="assets/pizza-fruits-de-mer.jpg" alt="Pizza Fruits de mer" loading="lazy" width="960" height="640">
+      <div class="pizza-info">
+        <h3>Fruits de mer</h3>
+        <p>Crevettes, crème légère, ail, persil et zeste de citron.</p>
+        <div class="tags"><span>Crevettes</span><span>Citron</span></div>
+        <div class="price">
+          <span>6 500 FCFA</span>
+          <a href="contact.html" aria-label="Commander Fruits de mer"><i class="fa-solid fa-plus"></i></a>
+        </div>
+      </div>
+    </article></div>
+
+  <div class="panel" style="margin-top:70px">
+    <div class="title" style="margin-bottom:0">
+      <span>Pour accompagner</span>
+      <h2>Boissons & desserts</h2>
+    </div>
+    <div class="list-grid">
+      <div>
+        <h3 style="margin-bottom:10px">Boissons</h3>
+        <div class="list-row"><span>Jus de bissap maison</span><span class="dots"></span><span class="amount">1 000 FCFA</span></div><div class="list-row"><span>Citronnade gingembre</span><span class="dots"></span><span class="amount">1 200 FCFA</span></div><div class="list-row"><span>Sodas (33 cl)</span><span class="dots"></span><span class="amount">800 FCFA</span></div><div class="list-row"><span>Eau minérale (50 cl)</span><span class="dots"></span><span class="amount">500 FCFA</span></div><div class="list-row"><span>Thé glacé pêche</span><span class="dots"></span><span class="amount">1 000 FCFA</span></div><div class="list-row"><span>Café expresso</span><span class="dots"></span><span class="amount">900 FCFA</span></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:10px">Desserts</h3>
+        <div class="list-row"><span>Tiramisu maison</span><span class="dots"></span><span class="amount">2 000 FCFA</span></div><div class="list-row"><span>Moelleux au chocolat</span><span class="dots"></span><span class="amount">2 200 FCFA</span></div><div class="list-row"><span>Salade de fruits frais</span><span class="dots"></span><span class="amount">1 800 FCFA</span></div><div class="list-row"><span>Glace vanille / fraise</span><span class="dots"></span><span class="amount">1 500 FCFA</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel cta">
+    <h2>Commandez en 2 minutes</h2>
+    <p>Appelez-nous au +237 691 595 808 ou envoyez votre commande depuis la page contact.</p>
+    <a href="contact.html" class="btn-main">Commander maintenant <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div>
+      <h4>Pizza<span style="color:#ff8a2c">Mood</span></h4>
+      <p>Des pizzas artisanales cuites au four à pierre, préparées chaque jour avec des ingrédients frais à Douala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="menu.html">Menu</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html">Contact</a>
+      <a href="moderation.html">Modération</a>
+      <a href="notifications.html">Notifications e-mail</a>
+    </div>
+    <div class="footer-col">
+      <h4>Nous trouver</h4>
+      <a href="tel:+237691595808">+237 691 595 808</a>
+      <a href="mailto:contact@pizzamood.com">contact@pizzamood.com</a>
+      <span style="color:#cfcfcf">Douala, Akwa — Cameroun</span>
+      <span style="color:#cfcfcf;display:block;margin-top:12px">Tous les jours : 10h00 - 23h00</span>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 PizzaMood — Tous droits réservés.</div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

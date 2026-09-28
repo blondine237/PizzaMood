@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avis clients — PizzaMood Douala</title>
+  <meta name="description" content="Découvrez les avis de nos clients sur les pizzas PizzaMood à Douala et laissez votre propre note et commentaire.">
+  <meta property="og:title" content="Avis clients — PizzaMood Douala">
+  <meta property="og:description" content="Découvrez les avis de nos clients sur les pizzas PizzaMood à Douala et laissez votre propre note et commentaire.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<div class="index" style="--page-bg:url(assets/bg-dark.jpg)" data-page="avis">
+<header>
+  <a href="index.html" class="logo">
+    <img class="logo-img" src="assets/logo-pizzamood.png" alt="Logo PizzaMood" width="1536" height="1024">
+  </a>
+  <nav id="main-nav">
+    <a href="index.html" data-page="index">Accueil</a>
+    <a href="a-propos.html" data-page="a-propos">À propos</a>
+    <a href="menu.html" data-page="menu">Menu</a>
+    <a href="galerie.html" data-page="galerie">Galerie</a>
+    <a href="avis.html" data-page="avis">Avis</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+  </nav>
+  <a href="menu.html" class="commande">Commander</a>
+</header>
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+<div class="background-blur blur3"></div>
+<section class="page">
+  <div class="page-head">
+    <span class="kicker">Vos retours</span>
+    <h1>Avis <span>clients</span></h1>
+    <p>Ce que nos clients pensent de nos pizzas cuites au four à pierre. Partagez votre expérience, cela nous aide à nous améliorer chaque jour.</p>
+  </div>
+
+  <div class="avis-resume" id="avis-resume">
+    <div class="avis-score"><strong id="moyenne">—</strong><span id="etoiles-moy" class="etoiles"></span><span id="total-avis">0 avis client</span></div>
+    <div class="avis-barres" id="barres"></div>
+  </div>
+
+  <div class="contact-grid avis-grid">
+    <div class="info-card">
+      <strong>Laisser un avis</strong>
+      <form id="avis-form">
+        <div class="field">
+          <label for="avis-nom">Votre nom</label>
+          <input id="avis-nom" maxlength="60" placeholder="Ex. Jean Mballa" required>
+        </div>
+        <div class="field">
+          <label>Votre note</label>
+          <div class="note-choix" id="note-choix">
+            <button type="button" data-n="1"><i class="fa-solid fa-star"></i></button>
+            <button type="button" data-n="2"><i class="fa-solid fa-star"></i></button>
+            <button type="button" data-n="3"><i class="fa-solid fa-star"></i></button>
+            <button type="button" data-n="4"><i class="fa-solid fa-star"></i></button>
+            <button type="button" data-n="5" class="on"><i class="fa-solid fa-star"></i></button>
+            <span id="note-val">5/5</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="avis-commentaire">Votre commentaire</label>
+          <textarea id="avis-commentaire" maxlength="600" placeholder="Parlez-nous de votre pizza, du service, de la livraison…" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Publier mon avis <i class="fa-solid fa-paper-plane"></i></button>
+        <p id="avis-erreur" style="display:none;margin-top:18px;color:#ff6b5a"></p>
+        <p id="avis-merci" style="display:none;margin-top:18px;color:#ff8a2c">Merci ! Votre avis a bien été reçu : il sera publié après validation par notre équipe.</p>
+        <p style="margin-top:14px;color:#cfcfcf;font-size:13px">Tous les avis sont modérés avant publication.</p>
+      </form>
+    </div>
+
+    <div class="info-card">
+      <strong>Ils ont goûté nos pizzas</strong>
+      <p id="avis-vide" style="color:#cfcfcf">Soyez le premier à donner votre avis !</p>
+      <div class="avis-liste" id="avis-liste"></div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div>
+      <h4>Pizza<span style="color:#ff8a2c">Mood</span></h4>
+      <p>Des pizzas artisanales cuites au four à pierre, préparées chaque jour avec des ingrédients frais à Douala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="menu.html">Menu</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html">Contact</a>
+      <a href="moderation.html">Modération</a>
+      <a href="notifications.html">Notifications e-mail</a>
+    </div>
+    <div class="footer-col">
+      <h4>Nous trouver</h4>
+      <a href="tel:+237691595808">+237 691 595 808</a>
+      <a href="mailto:contact@pizzamood.com">contact@pizzamood.com</a>
+      <span style="color:#cfcfcf">Douala, Akwa — Cameroun</span>
+      <span style="color:#cfcfcf;display:block;margin-top:12px">Tous les jours : 10h00 - 23h00</span>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 PizzaMood — Tous droits réservés.</div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

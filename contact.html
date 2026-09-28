@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & commande — PizzaMood Douala</title>
+  <meta name="description" content="Adresse, téléphone, horaires et formulaire de commande de PizzaMood à Douala, Akwa. Ouvert tous les jours 10h-23h.">
+  <meta property="og:title" content="Contact & commande — PizzaMood Douala">
+  <meta property="og:description" content="Adresse, téléphone, horaires et formulaire de commande de PizzaMood à Douala, Akwa. Ouvert tous les jours 10h-23h.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<div class="index" style="--page-bg:url(assets/bg-dark.jpg)" data-page="contact">
+<header>
+  <a href="index.html" class="logo">
+    <img class="logo-img" src="assets/logo-pizzamood.png" alt="Logo PizzaMood" width="1536" height="1024">
+  </a>
+  <nav id="main-nav">
+    <a href="index.html" data-page="index">Accueil</a>
+    <a href="a-propos.html" data-page="a-propos">À propos</a>
+    <a href="menu.html" data-page="menu">Menu</a>
+    <a href="galerie.html" data-page="galerie">Galerie</a>
+    <a href="avis.html" data-page="avis">Avis</a>
+    <a href="contact.html" data-page="contact">Contact</a>
+  </nav>
+  <a href="menu.html" class="commande">Commander</a>
+</header>
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+<div class="background-blur blur3"></div>
+<section class="page">
+  <div class="page-head">
+    <span class="kicker">Parlons-en</span>
+    <h1>Contactez-<span>nous</span></h1>
+    <p>Une commande, une réservation ou une question ? Nous répondons tous les jours entre 10h et 23h.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="info-card">
+      <strong>Informations</strong>
+      <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><h4>Adresse</h4><p>Douala, Akwa — Cameroun</p></div></div>
+      <div class="info-item"><i class="fa-solid fa-phone"></i><div><h4>Téléphone</h4><p><a href="tel:+237691595808" style="color:#cfcfcf">+237 691 595 808</a></p></div></div>
+      <div class="info-item"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p><a href="mailto:contact@pizzamood.com" style="color:#cfcfcf">contact@pizzamood.com</a></p></div></div>
+      <div class="info-item"><i class="fa-regular fa-clock"></i><div><h4>Horaires</h4><p>Tous les jours : 10h00 - 23h00</p></div></div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <strong>Envoyez-nous un message</strong>
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="field"><label for="nom">Votre nom</label><input id="nom" name="nom" placeholder="Ex. Jean Mballa" required></div>
+          <div class="field"><label for="tel">Téléphone</label><input id="tel" name="tel" placeholder="+237 6.." required></div>
+        </div>
+        <div class="field"><label for="email">Votre email</label><input id="email" name="email" type="email" placeholder="vous@exemple.com"></div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Dites-nous ce qui vous ferait plaisir…" required></textarea></div>
+        <button type="submit" class="btn-submit">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button>
+        <p id="contact-merci" style="display:none;margin-top:20px;color:#ff8a2c">Merci ! Votre message est bien noté, nous vous rappelons très vite.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe title="Carte PizzaMood Douala Akwa" src="https://www.openstreetmap.org/export/embed.html?bbox=9.68%2C4.03%2C9.72%2C4.06&amp;layer=mapnik" loading="lazy"></iframe>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div>
+      <h4>Pizza<span style="color:#ff8a2c">Mood</span></h4>
+      <p>Des pizzas artisanales cuites au four à pierre, préparées chaque jour avec des ingrédients frais à Douala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="menu.html">Menu</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html">Contact</a>
+      <a href="moderation.html">Modération</a>
+      <a href="notifications.html">Notifications e-mail</a>
+    </div>
+    <div class="footer-col">
+      <h4>Nous trouver</h4>
+      <a href="tel:+237691595808">+237 691 595 808</a>
+      <a href="mailto:contact@pizzamood.com">contact@pizzamood.com</a>
+      <span style="color:#cfcfcf">Douala, Akwa — Cameroun</span>
+      <span style="color:#cfcfcf;display:block;margin-top:12px">Tous les jours : 10h00 - 23h00</span>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 PizzaMood — Tous droits réservés.</div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
